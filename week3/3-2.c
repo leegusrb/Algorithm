@@ -22,7 +22,7 @@ void downHeap(int i) {
 }
 
 void rBuildHeap(int i) {
-	if (i > n) return;
+	if (i > n / 2) return;
 
 	rBuildHeap(i * 2);
 	rBuildHeap(i * 2 + 1);
